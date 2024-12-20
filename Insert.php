@@ -10,7 +10,7 @@ if(isset($_POST["submit"])){
     $query = "INSERT INTO `student` (`Name`,`Mail`,`Mobile`,`Password`,`Description`) VALUES ('$studentname','$studentemail','$studentmobile','$studentpassword','$studentdescription')";
 
     $query_close = mysqli_query($conn,$query);
-  
+    header("location:Select.php");
 }
 ?>
 <!DOCTYPE html>
